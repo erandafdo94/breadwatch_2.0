@@ -1,0 +1,7 @@
+body {
+  background-color: #EAEAEA;
+}
+
+.ui.inverted.top.fixed.menu {
+  display: none;
+}
