@@ -1,7 +1,7 @@
 import React from 'react';
-import { NavBar } from './NavBar/NavBar';
 import { Container } from 'semantic-ui-react';
-import { Dashboard } from '../../Features/Dashboard/Dashboard';
+import { NavBar } from './navBar/NavBar';
+import { Dashboard } from '../../features/dashboard/Dashboard';
 
 
 function App() {

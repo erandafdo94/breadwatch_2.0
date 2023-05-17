@@ -1,8 +1,16 @@
 import React from 'react'
-import { MainCards } from './MainCards/MainCards'
+import { Grid } from 'semantic-ui-react'
+import { MainCards } from './mainCards/MainCards'
+
+
 
 export const Dashboard = () => {
   return (
-    <MainCards></MainCards>
+    <Grid>
+      <Grid.Column width ='16'>
+       <MainCards></MainCards>
+      </Grid.Column>
+    </Grid>
+    
   )
 }
