@@ -1,7 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Card, Grid, Segment, Statistic } from "semantic-ui-react";
+import agent from "../../../app/api/agent";
+
+
 
 export const MainCards = () => {
+  
+
+  useEffect(() => {
+    agent.Accounts.stats().then(res => {
+
+    })
+  })
+
   return (
     <Grid columns={3}>
       <Grid.Row>
