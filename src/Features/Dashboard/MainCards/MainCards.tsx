@@ -1,17 +1,19 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Card, Grid, Segment, Statistic } from "semantic-ui-react";
 import agent from "../../../app/api/agent";
+import { MonthlyIncomeExpenseStats } from "../../../app/models/monthlyIncomeExpenseStats";
 
 
 
 export const MainCards = () => {
-  
+  const[incomeExpenseStats, setIncomeExpenseStats] = useState<MonthlyIncomeExpenseStats>();
 
   useEffect(() => {
-    agent.Accounts.stats().then(res => {
-
+    agent.Accounts.stats(1).then(res => {
+      console.log(res);
     })
   })
+
 
   return (
     <Grid columns={3}>
@@ -28,8 +30,8 @@ export const MainCards = () => {
         <Grid.Column>
           <Segment>
             <Statistic >
-              <Statistic.Value>$5000</Statistic.Value>
-              <Statistic.Label>Net Worth</Statistic.Label>
+              <Statistic.Value>$ {incomeExpenseStats?.monthlyIncome}</Statistic.Value>
+              <Statistic.Label>Income last 30 days</Statistic.Label>
             </Statistic>
           </Segment>
         </Grid.Column>
@@ -37,8 +39,8 @@ export const MainCards = () => {
         <Grid.Column>
           <Segment >
             <Statistic>
-              <Statistic.Value>$5000</Statistic.Value>
-              <Statistic.Label>Net Worth</Statistic.Label>
+              <Statistic.Value>$ {incomeExpenseStats?.monthlyExpense}</Statistic.Value>
+              <Statistic.Label>Expense last 30 days</Statistic.Label>
             </Statistic>
           </Segment>
         </Grid.Column>
