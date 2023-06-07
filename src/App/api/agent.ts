@@ -10,7 +10,7 @@ const requests = {
 }
 
 const Accounts = {
-    stats: () => requests.get('/get-networth-foruser')
+    stats: (userId:number) => requests.get('/get-networth-foruser/' + userId)
 }
 
 const agent = {
