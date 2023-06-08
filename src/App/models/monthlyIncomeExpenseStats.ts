@@ -1,5 +1,5 @@
  export interface MonthlyIncomeExpenseStats
     {
-        monthlyIncome: number;
-        monthlyExpense: number;
+        income: number;
+        expense: number;
     }

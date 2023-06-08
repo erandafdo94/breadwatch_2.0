@@ -1,8 +1,7 @@
 import React from 'react';
 import { Container } from 'semantic-ui-react';
-import { NavBar } from './navBar/NavBar';
-import { Dashboard } from '../../features/dashboard/Dashboard';
-import './index.css';
+import { Dashboard } from '../../Features/Dashboard/dashboard';
+import { NavBar } from './NavBar/navBar';
 
 
 function App() {

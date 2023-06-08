@@ -1,7 +1,9 @@
 import React from "react";
 import { Grid, GridColumn, GridRow, Header, Icon, Segment } from "semantic-ui-react";
-import { MainCards } from "./mainCards/MainCards";
-import { Budget } from "./budgets/Budget";
+import { Budget } from "./Budgets/budget";
+import { MainCards } from "./MainCards/mainCards";
+
+
 
 export const Dashboard = () => (
   <Grid columns={2} padded>
