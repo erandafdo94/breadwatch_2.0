@@ -1,7 +1,7 @@
 import React from "react";
 import { Grid, GridColumn, GridRow, Header, Icon, Segment } from "semantic-ui-react";
-import { Budget } from "./Budgets/budget";
 import { MainCards } from "./MainCards/mainCards";
+import { Budget } from "./BudgetsCard/budgetCard";
 
 
 

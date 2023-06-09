@@ -28,7 +28,7 @@ const requests = {
 }
 
 const Accounts = {
-    stats: (userId:number) => requests.get<MonthlyIncomeExpenseStats>('/Transaction/get-monthly-stats/' + userId)
+    stats: (userId:number) => requests.get<MonthlyIncomeExpenseStats>('/transaction/get-monthly-stats/' + userId)
 }
 
 const agent = {
