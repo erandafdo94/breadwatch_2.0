@@ -1,8 +1,7 @@
 import React from 'react';
 import { Container } from 'semantic-ui-react';
-import { Dashboard } from '../../Features/Dashboard/dashboard';
-import { NavBar } from './NavBar/navBar';
 import { Outlet } from 'react-router-dom';
+import { NavBar } from './NavBar/navBar';
 
 
 function App() {

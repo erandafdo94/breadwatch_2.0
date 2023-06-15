@@ -30,6 +30,18 @@ export const NavBar = () => {
         <Menu.Item header>
           <label>BreadWatch</label>
         </Menu.Item>
+        <Menu.Item header>
+          <label>Transactions</label>
+        </Menu.Item>
+
+        <Menu.Item header>
+          <label>Budgets</label>
+        </Menu.Item>
+        
+        <Menu.Item header>
+          <label>Accounts</label>
+        </Menu.Item>
+
 
 
         <Menu.Menu position='right'>
